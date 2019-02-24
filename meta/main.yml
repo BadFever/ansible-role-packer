@@ -7,4 +7,4 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-      - 7
+        - 7
