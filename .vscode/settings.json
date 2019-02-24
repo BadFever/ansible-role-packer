@@ -1,4 +1,4 @@
 {
     "files.insertFinalNewline": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
 }

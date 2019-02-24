@@ -1,6 +1,6 @@
 # ansible-role-packer
 
-[![Build Status](https://travis-ci.org/BadFever/ansible-roler-packer.svg?branch=master)](https://travis-ci.org/BadFever/ansible-roler-packer)
+[![Build Status](https://travis-ci.org/BadFever/ansible-role-packer.svg?branch=master)](https://travis-ci.org/BadFever/ansible-role-packer)
 
 Installs [Packer](https://www.packer.io).
 
