@@ -1,0 +1,10 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Badfever
+  description: "Packer for Linux"
+  platforms:
+    - name: EL
+      versions:
+      - 7
