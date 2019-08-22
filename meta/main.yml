@@ -2,8 +2,10 @@
 dependencies: []
 
 galaxy_info:
-  author: Badfever
+  author: badfever
   description: "Packer for Linux"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.8
   platforms:
     - name: EL
       versions:
