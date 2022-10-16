@@ -5,8 +5,8 @@ galaxy_info:
   author: badfever
   description: "Packer for Linux"
   license: "license (BSD, MIT)"
-  min_ansible_version: 1.8
+  min_ansible_version: "1.8"
   platforms:
     - name: Ubuntu
       versions:
-        - 22.04
+        - "jammy"
