@@ -1,0 +1,10 @@
+---
+- name: Add HashiCorp apt gpg key.
+  ansible.builtin.apt_key:
+    url: "{{ packer_apt_gpg_key }}"
+    state: present
+
+- name: Add HashiCorp apt repository.
+  ansible.builtin.apt_repository:
+    repo: "{{ packer_apt_repository }}"
+    state: present
