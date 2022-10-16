@@ -6,5 +6,5 @@ packer_repo_url: https://apt.releases.hashicorp.com
 # Debian/Ubuntu
 packer_apt_release_channel: stable
 packer_apt_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
-packer_apt_repository: "deb [arch={{ packer_apt_arch }}] {{ packer_repo_url }}/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} {{ packer_apt_release_channel }}"
+packer_apt_repository: "deb [arch={{ packer_apt_arch }}] {{ packer_repo_url }} {{ ansible_distribution_release }} {{ packer_apt_release_channel }}"
 packer_apt_gpg_key: https://apt.releases.hashicorp.com/gpg
