@@ -1,7 +1,5 @@
 # ansible-role-packer
 
-[![Build Status](https://travis-ci.org/BadFever/ansible-role-packer.svg?branch=master)](https://travis-ci.org/BadFever/ansible-role-packer)
-
 Installs [Packer](https://www.packer.io).
 
 ## Requirements
@@ -15,7 +13,7 @@ Available variables are listed below, along with default values (see `defaults/m
 The Packer version to install.
 
 ```YAML
-packer_version: "1.3.4"
+packer_version: "1.8.3-1"
 ```
 
 The system architecture (e.g. `386` or `amd64`) to use.
@@ -24,21 +22,17 @@ The system architecture (e.g. `386` or `amd64`) to use.
 packer_arch: "amd64"
 ```
 
-The packer binary location.
-
-```YAML
-packer_bin_path: /usr/local/bin
-```
-
 ## Dependencies
 
 None.
 
 ## Example Playbook
 
-    - hosts: all
-      roles:
-        - ansible-role-packer
+```yml
+- hosts: all
+  roles:
+    - ansible-role-packer
+```
 
 ## License
 

@@ -1,12 +1,9 @@
 ---
-- name: ensure unzip is installed
-  package:
-    name: unzip
-    state: present
+- include_tasks: setup-debian.yml
+  when: ansible_os_family == 'Debian'
 
-- name: download and unarchive packer
-  unarchive:
-    src: https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_{{ packer_arch }}.zip
-    dest: "{{ packer_bin_path }}"
-    remote_src: true
-    creates: "{{ packer_bin_path }}/packer"
+- name: Install packer software.
+  ansible.builtin.apt:
+    name: "packer={{ packer_version }}"
+    state: present
+    update_cache: true
